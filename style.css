@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 1;
+    color: black;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 1.5;
+    color: black;
+    
+}
+h4{
+    font-size: 20px;
+    color: black;
+}
+h6{
+    font-size: 17px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    color: black;
+    margin: 15px 0 20px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: darkmagenta;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: aquamarine;
+    border-color: transparent;
+    border-radius: 5px;
+    border: 1px solid peru;
+    transition: 0.2s;
+}
+body{
+    width: 100%;
+}
+
+/**********Header*****/
+
+#header{
+    display: flex;
+align-items: center;
+justify-content:space-between;
+padding: 20px 80px;
+background-color: white;
+box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.06);
+z-index: 9;
+position: sticky;
+top: 0;
+left: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none ;
+    padding: 10px 18px;
+    position: relative;
+}
+
+#navbar li a,
+#navbar li a.active{
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color: black;
+transition: 1s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: palevioletred;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: pink;
+position: absolute;
+bottom: -1px;
+left: 20px;
+}
+
+/********Home Page************/
+
+#hero{
+    background-image: url(Images/background\ 2.jfif);
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    padding: 0 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-size: cover;
+}
+
+#hero h4{
+    padding-top: 20px;
+    padding-bottom: 10px ;
+    color: aquamarine;
+}
+#hero h2{
+color: green;
+}
+#hero h1{
+    color: darkgreen;
+}
+
+#hero p{
+    color: black;
+}
+
+#hero button{
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 30px 10px 30px;
+}
+
+#hero button:hover{
+    background-color: chartreuse;
+    color: black;
+}
+
+/*********  Shoe brands***************/
+
+#brands{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: darkolivegreen;
+    padding-top: 15px;
+}
+
+#brands h3{
+    font-size: 20px;
+
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+#feature .fe-box{
+    width: 180px;
+text-align: center;
+border-radius: 5px;
+border: 1px solid white;
+box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.3);
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 50px 50px rgba(70, 60, 200, 0.1);
+}
+
+#feature .fe-box img{
+    width: 100%
+}
+
+/***********   Products   *******************/
+
+#product{
+    text-align: center;
+    padding: 60px;
+}
+
+#product h2{
+    color: darkcyan;
+}
+
+#product .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid darkslategrey;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.7);
+    margin: 17px 12px;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+#product .pro img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+#product .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product .pro .des span{
+    color: purple;
+    font-size: 12px;
+}
+
+#product .pro .des h5{
+    color: palevioletred;
+    font-size: 14px ;
+    padding-top: 7px;
+}
+
+#product .pro .des p{
+    font-size: 15px;
+    color: rgba(0, 4, 2, 0.7);
+}
+
+#product .pro .des h6{
+    padding-top: 7px;
+    font-size: 12px;
+    color: cadetblue;
+    font-weight: 700;
+}
+
+#product .cart a {
+    position: absolute;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 30px;
+      list-style: none;
+      flex-wrap: wrap;
+      background-color: none;
+      font-weight: 500;
+      color: purple;
+      border: 2px solid black;
+      bottom: 10px;
+      right: 20px;
+    }
+
+    /*********** Banner ************/
+
+    #banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url(Images/banner-1.jfif);
+        height: 40vh;
+        margin-top: 35px;
+    }
+
+    #banner h4{
+        font-size: 16px;
+    }
+
+    #banner h2{
+        font-size: 30px
+    }
+
+    #banner h2 span{
+        color: brown;
+    }
+
+    #banner button:hover{
+        background-color: white;
+        color: blueviolet;
+    }
+
+    #sm-banner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+    }
+
+    #sm-banner .banner-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(Images/Background\ 1.jfif);
+        min-width: 540px;
+        border-radius: 40px;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+    }
+
+    #sm-banner .banner-box1 {
+        background-image: url(Images/banner.jfif);
+        min-width: 540px;
+        height: 50vh;
+    }
+
+    #newsletter{
+        display: flex;
+        margin-top: 70px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        background-image: url(Images/background\ 2.jfif);
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+
+    #newsletter h4{
+        text-decoration: underline;
+        font-size: 22px;
+        font-weight: 700;
+        color: green;
+    }
+
+    #newsletter p{
+        font-size: 15px;
+    }
+
+    #newsletter span{
+        color: red;
+    }
+
+    #newsletter input{
+        width: 23%;
+    };
+       
+
+
+
+
